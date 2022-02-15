@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -os-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 777px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 991px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.p-t {
+  padding-top: 50px;
+}
+
+.p-b {
+  padding-bottom: 50px;
+}
+
+.open {
+  display: block !important;
+}
+
+.open-r {
+  display: block !important;
+}
+
+.grid-3 {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.grid-2 {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.grid-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 10px 1fr 10px 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+header .container nav span {
+  left: 5px;
+  right: auto !important;
+}
+
+.service .container .serv > div h3 {
+  margin-right: 15px;
+}
+
+.footer .container .foot-box > div div {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=main-rtl.css.map */

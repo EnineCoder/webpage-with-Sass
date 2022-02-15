@@ -1,0 +1,110 @@
+// Start Header
+header {
+  border-bottom: 1px solid $greyColor;
+  z-index: 1000;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: 0.5s;
+    @include responsive(max-small) {
+      flex-direction: column;
+    }
+    @include responsive(mobile) {
+      flex-direction: row;
+    }
+    .logo {
+      color: $greyColor;
+      padding: 10px;
+      h1 {
+        font: {
+          size: 2rem;
+          weight: bold;
+        }
+        margin: 0;
+      }
+    }
+    .bars {
+      i {
+        font-size: 30px;
+        cursor: pointer;
+        color: $mainColor;
+        @include responsive(small) {
+          display: none;
+          transition: 0.5s;
+        }
+      }
+    }
+    nav {
+      @include responsive(max-small) {
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      @include responsive(mobile) {
+        position: relative;
+        width: 80%;
+        background-color: #e2494c;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        border-radius: 5px;
+        margin: 30px auto 0;
+        display: none;
+      }
+      span {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        font-size: 30px;
+        background-color: #fff;
+        @include circle(40px);
+        @extend %flex;
+        color: $mainColor;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          color: #fff;
+          background-color: $mainColor;
+        }
+        @include responsive(small) {
+          display: none;
+        }
+      }
+      ul {
+        display: flex;
+        font-size: 18px;
+        background-color: $mainColor;
+        padding: 10px;
+        border-radius: 5px;
+        @include responsive(mobile) {
+          flex-direction: column;
+          padding-top: 40px;
+        }
+        li {
+          @include responsive(mobile) {
+            transition: 0.5s;
+            margin-bottom: 20px;
+            &:hover {
+              background-color: #ff9191;
+            }
+          }
+          a {
+            display: block;
+            margin-left: 10px;
+            color: #fff;
+            @include responsive(mobile) {
+              font-size: 20px;
+              transition: 0.5s;
+              padding: 5px;
+            }
+            &:hover {
+              color: #ddd;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// End Header

@@ -1,0 +1,37 @@
+@import "../css/sass/helpers/mixins";
+@import "../css/sass/helpers/variables";
+@import "../css/sass/layout/grid";
+
+header {
+  .container {
+    nav {
+      span {
+        left: 5px;
+        right: auto !important;
+      }
+    }
+  }
+}
+.service {
+  .container {
+    .serv {
+      > div {
+        h3 {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  .container {
+    .foot-box {
+      > div {
+        div {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
